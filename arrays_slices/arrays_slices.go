@@ -23,4 +23,14 @@ func main() {
 		}
 	}
 	fmt.Println(e)
+
+	/*
+	* Major difference between slices and arrays is that a slice does not need the size to be specified in its declaration
+	*/
+	s := [] int32{3, 4, 5}
+	t := [] int32{}
+ 	fmt.Println(s, t)
+	copy(t, s)
+	t = append(t, 4)
+	fmt.Println(s, t)
 }
