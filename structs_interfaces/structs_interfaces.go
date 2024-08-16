@@ -16,7 +16,7 @@ func (animal Animals) makeSound() string {
 }
 
 // Interfaces: An interface is a typed collection of methods
-type geometry interface {
+type geometry interface { // This defines any type that has the area and parameter methods
 	area() float64
 	perimeter() float64
 }
